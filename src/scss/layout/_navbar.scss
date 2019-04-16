@@ -1,0 +1,139 @@
+header{
+  font-family: 'Lato';
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 0 5vw;
+  background-color: #FFF;
+
+  p {
+    margin: 0;
+
+    .sp-separator {
+      &:after {
+        margin-left: 1.25rem;
+        content: '|';
+        color: #000;
+      }
+    }
+
+    span {
+      margin-left: 1.25rem;
+      font-family: 'Lato', sans-serif;
+      color: $primary;
+      font-size: .80rem;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .topbar-icon {
+      @include transition(color 200ms ease-in);
+      margin-bottom: -3px;
+      font-size: 1.10rem;
+      color: $brand-primary;
+
+      &:hover {
+        color: darken($brand-primary, 10%);
+      }
+    }
+  }
+}
+.navbar {
+  position: absolute;
+  padding: .35rem 5vw;
+  width: 100%;
+  background-color: transparent;
+    @include mobiles{
+      position: relative;
+    }
+}
+
+.navbar-brand {
+  @include mobile-all{
+    width: 70%;
+  }
+  img {
+    max-height: 50px;
+    width: 50%;
+  }
+}
+
+.navbar-collapse {
+  @include mobiles { margin-top: 1.25rem; }
+  border: none;
+}
+
+.navbar-toggler {
+  border: none;
+  margin: 0;
+  padding: .8rem;
+}
+
+
+.navbar-nav {
+  .nav-item {
+    @include mobiles {
+      line-height: 2.25;
+    }
+    line-height: 2.75;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: $primary;
+}
+
+.user-img {
+  .img-thumbnail {
+    max-width: 60%;
+    margin-top: -10px;
+  }
+}
+.floating-cart {
+  @include mobiles {
+    line-height: 0rem;
+  }
+  font-size: 1rem;
+  line-height: 3.5rem;
+}
+
+.login-a {
+  border-left: 1px solid #ddd;
+  padding-left: 2rem;
+}
+.navbar-nav {
+  @include mobiles {
+    /*flex-direction: column-reverse;*/
+  }
+}
+
+.nav-user-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  .rounded-circle {
+    width: 56px;
+    height: 56px;
+    margin-right: 1rem;
+  }
+
+  p { margin: 0; }
+}
+
+.dropdown {
+  position: relative;
+  top: 5px;
+}

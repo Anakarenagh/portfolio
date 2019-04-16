@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Work Sans', sans-serif;;
+	font-weight: 600;
+	color: $primary;
+}
+h5 {
+	font-size: 1rem;
+}
+p {
+	font-family: 'Work Sans', sans-serif;;
+	font-weight: 300;
+	color: $text-color;
+}
+span {
+	color: $primary;
+}
+a {
+	font-family: 'Work Sans', sans-serif;;
+	font-weight: 300;
+}
+small,
+button,
+input {
+	font-weight: 500;
+}
+
+.label {
+	@include mobiles {
+		white-space: normal;
+	}
+	color: #686868;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+h3{
+	@include mobile-xs{
+		font-size: 1.4rem;
+	}
+}

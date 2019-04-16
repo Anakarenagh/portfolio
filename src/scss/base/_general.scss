@@ -1,0 +1,12 @@
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  font-family: 'Lato';
+}
+section {
+  padding-top: 5rem;
+   @include mobile-all{
+     padding-top: 3rem;
+   }
+}

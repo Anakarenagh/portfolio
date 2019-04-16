@@ -1,0 +1,113 @@
+#sorting-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1051;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow-x: scroll;
+
+  background-color: #FFF;
+
+  .overlay-header {
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+    font-weight: 600;
+    font-size: 1.10rem;
+    border-bottom: solid 1px #ddd;
+    text-align: center;
+    text-transform: uppercase;
+    color: $brand-primary;
+
+    .filter-title {
+      color: #ee4f50;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    svg {
+      @include vcenter-transform;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .collapse,
+  .collapsing {
+    border-bottom: 1px solid lightgrey;
+
+    label {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+.panel-trigger {
+  padding: .75rem 1.25rem;
+  border: 1px solid lightgrey;
+
+  text-align: left;
+  color: #000;
+  background-color: #FFF;
+
+  .panel-title {
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+
+  svg {
+    @include transition(transform 200ms ease-in);
+    font-size: 1.5rem;
+    margin-top: -1rem;
+  }
+
+  .selected-option {
+    margin: 0;
+    font-size: .80rem;
+    color: $brand-primary;
+  }
+
+  &:hover {
+    border-color: darken(lightgrey, 15%);
+    color: #000;
+    background-color: #FFF;
+  }
+}
+
+.collapse-content {
+  padding: 1.5rem;
+
+  .form-check {
+    margin-bottom: .5rem;
+  }
+
+  .form-check-input {
+    margin-top: .1rem;
+  }
+}
+
+.overlay-open {
+  display: block;
+}
+
+.overlay-closed {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+

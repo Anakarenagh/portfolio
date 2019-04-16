@@ -1,0 +1,190 @@
+footer{
+  padding: 2rem;
+  background: #545b62;
+  color: #FFF;
+}
+  .title-footer{
+    color: #FFF!important;
+    font-size: .9rem;
+      @include mobile-all{
+        text-align: left!important;
+        margin-top: 1.5rem;
+      }
+  }
+  .link-footer{
+    display: block;
+    margin: .5rem 0;
+    font-size: .7rem;
+    a{
+      cursor: pointer;
+      color: #FFF;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+
+
+.sitemap {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    @include sm-desktop { font-size: 0.7rem; }
+    @include xl-desktop { font-size: 0.7rem; }
+    font-family: 'Lato';
+    margin-bottom: 0rem;
+    font-size: 0.9rem;
+  }
+
+  a {
+    @include mobiles { font-size: .8rem; }
+    @include sm-desktop { font-size: 0.8rem;}
+    @include transition(color 150ms ease-out);
+    color: #000;
+
+    &:hover {
+      text-decoration: none;
+      color: lighten(#000, 30%);
+    }
+  }
+}
+
+.contact-details {
+  p {
+    @include mobiles {
+      font-size: 0.8rem;
+    }
+    @include sm-desktop {
+      font-size: 0.8rem;
+    }
+    margin-bottom: .5rem;
+  }
+  a {
+    @include mobiles {
+      font-size: 0.8rem;
+    }
+    @include sm-desktop {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+
+
+.def-link {
+  @include mobiles {
+    font-size: 0.8rem;
+  }
+  @include sm-desktop {
+    font-size: 0.95rem;
+  }
+  @include transition(color 200ms ease-in);
+  color: $brand-primary;
+
+  &:hover {
+    text-decoration: none;
+    color: darken($brand-primary, 20%);
+  }
+}
+
+
+
+.bottom-bar {
+  @include mobiles { display: none; }
+  display: flex;
+  justify-content: center;
+  background-color: #A58265;
+  padding: 1rem 0 0rem 0;
+  z-index: 2;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p {
+    @include mobiles { font-size: 0.85rem; }
+    color: #FFF;
+    font-family: 'Lato';
+    margin: 0;
+  }
+}
+
+.text-center-mobiles {
+  @include mobiles {
+    text-align: center;
+  }
+}
+
+.mb-4-xs {
+  @include mobiles {
+    margin-bottom: 2rem;
+  }
+}
+
+.icon-2rem {
+  font-size: 2.15rem;
+}
+
+.hidden-mob {
+  @include mobiles {
+   display: none;
+  }
+}
+
+.hidden-desk {
+  @include desktop {
+    display: none !important;
+  }
+}
+
+.fs-xs {
+  @include tablet { font-size: 0.80rem; }
+}
+
+.mobile-footer {
+  @include sm-desktop {
+    display: none
+  }
+  @include md-desktop {
+    display: none;
+  }
+  @include xl-desktop {
+    display: none;
+  }
+  @include xxl-desktop {
+    display: none;
+  }
+  .logo-footer-mobile {
+    max-width: 10rem;
+    min-width: 8rem;
+  }
+  .back-top {
+    font-size: 0.9rem;
+    font-weight: 600rem;
+    padding: 1rem 0;
+    background-color: #ddd;
+    border-bottom: solid 1px #c7c7c7;
+  }
+  .sitemap-mobile {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 0 !important;
+    li {
+      font-family: 'Lato';
+      margin-bottom: 0rem;
+      font-size: 0.8rem;
+      display: inline-block;
+      &::after {
+        content: "·";
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      a {
+        color: #585858;
+      }
+    }
+  }
+
+}

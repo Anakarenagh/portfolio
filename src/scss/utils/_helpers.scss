@@ -1,0 +1,233 @@
+.fill-blue{
+  background-color: #EDF2F5;
+}
+.fill-green{
+  background-color: #EBF9EF;
+  height: 100%;
+}
+.fill-gray{
+  background-color: #EBE8E8;
+  height: 100%;
+}
+.black {
+  color: #000000;
+}
+
+.grey {
+  color: #4a4a4a;
+}
+.white{
+  color: #FFFFFF !important;
+}
+
+.h-flex-center {
+  align-items: center;
+}
+
+.flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.vertical-center{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+   @include mobile-all{
+     margin: auto;
+     height: auto;
+   }
+}
+.responsive-img{
+  max-width: 100%;
+}
+.text-center{
+  text-align: center;
+}
+.d-block{
+  display: block;
+}
+.cont-p{
+  margin: 1.3rem 0;
+  width: 80%;
+    @include mobile-all{
+      width: 100%;
+    }
+}
+.letter-big{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.hide-mobile{
+  @include mobile-all{
+    display: none;
+  }
+}
+.show-mobile{
+  display: none;
+  @include mobile-all{
+    display: block;
+  }
+}
+.center-mobile{
+  @include mobile-all{
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
+.center-img{
+  display: block;
+  margin: auto;
+}
+.small-text{
+  font-size: .7rem;
+}
+.pt-0{
+  padding-top: 0!important;
+}
+
+// TODO: file containing procedural helpers.
+.fs-1_25 {
+  font-size: 1.25rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.center-col {
+  float: none;
+  margin: 0 auto;
+}
+
+.w-60p {
+  width: 60%;
+}
+
+.section-gutter {
+  margin: $vertical-gutter * 4 0;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.section-pd {
+  @include mobiles{
+    padding: 2rem 15px;
+  }
+  padding: 5rem 15px;
+}
+
+.section-cart {
+  @include mobiles {
+    width: 100%;
+  }
+  padding: 5rem 15px;
+  width: 600px;
+}
+
+.minus-m-1 {
+  @include mobiles {
+    margin-bottom: -1rem;
+  }
+  margin-bottom: -2rem;
+}
+
+
+
+.adjusted-pd {
+  @include mobiles {
+    padding: 0 15px;
+  }
+
+  padding: 0 10rem;
+}
+
+.top-flex-end {
+  margin-top: auto;
+}
+
+.search-row {
+  @include mobiles {
+    margin-bottom: 1rem;
+  }
+  margin-bottom: 2.25rem;
+
+  .search-input {
+    @include mobiles {
+      width: 80%;
+      margin: 1.5rem auto 1rem;
+    }
+  }
+}
+
+.mt-4r{
+  margin-top: 4.5rem !important;
+}
+
+.reduced-gutter {
+  padding-right: 0;
+}
+
+.xs-top-offset {
+  padding-top: 6rem;
+}
+
+.pd-lg {
+  @include desktop {
+    margin: 3rem auto;
+  }
+}
+
+.overflowx-hidden {
+  overflow-x: hidden;
+}
+
+.adjusted-container {
+  @include mobiles {
+    padding: 2rem 15px;
+  }
+
+  padding: 4rem 20rem;
+}
+
+select,
+textarea {
+  font-family: 'Lato';
+}
+
+.form-offset {
+  margin-top: 4.5em;
+}
+
+.btn-with-icon {
+  padding: 1rem 1.5rem;
+
+  svg {
+    font-size: 1.15rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.summary-header {
+  @include mobiles {
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  margin-bottom: 3rem;
+
+  img {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.thank-you {
+  font-size: 1.15rem;
+  color: $brand-primary;
+}
