@@ -18,9 +18,9 @@ export default class Home extends Component {
                     <Col xs="12" sm="6">
                       <div>
                         <h1>Hello, I'm Ana Karen Aguirre</h1>
-                        <h3>A UI & UX designer & developer</h3>
+                        <h3>A UX | UI designer & developer</h3>
                         <div className="cont-p">
-                          <p>I would describe myself as a rare hybrid between a UI / UX developer. I work with HTML, CSS and JavaScript libraries such as React JS. 
+                          <p>I would describe myself as a rare hybrid between a UI / UX designer and developer. I work with HTML, CSS and JavaScript libraries such as React JS. 
                           </p>
                         </div>
                       </div>
